@@ -7,7 +7,9 @@ const app=express();
 // const publicFolderPath=path.resolve(__dirname,'./public');
 // app.use(express.static(publicFolderPath));
 
-//MIDDLEWARE
+app.set('puerto', process.env.PORT || 3001);
+
+
 app.use(express.static('public'));
 
 
@@ -25,16 +27,11 @@ app.get('/login', (req,res)=>{
     res.sendFile(path.resolve(__dirname, './views/login.html'));
 });
 
-/*
-app.listen(3050, ()=>{
-    console.log('Servidor corriendo en el puerto 3050');
 
-});
-*/
 
-app.listen(process.env.PORT || 3000,function(){
-    console.log('Servidor corriendo en el puerto 3000');
-})
+app.listen( app.get('puerto'), ()=> console.log (`Servidor corriendo de manera satisfactoria  ${app.get('puerto')}`));
+
+
 
 
 
