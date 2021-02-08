@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <script src="https://kit.fontawesome.com/25f7d70820.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="topheader">
+            <div class="topheadermovil">
+           <figure class="logo">
+               <img src="images/logo.svg" alt="Logo MercadoLiebre"> 
+           </figure>
+         
+       <div class="searchbar"><input type="text" name="search" placeholder="Buscar productos, marcas"><i class="fas fa-search"></i></input></div>
+            </div>
+        <div class="slogan"><p> <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p> </div>
+       </div>
+        <nav class= "navbarheader">
+           <ul class="navbar">
+               <li><a href="#">Ofertas</a></li>
+               <li><a href="#">Tiendas Oficiales</a></li>
+               <li><a href="#">Vender</a></li>
+               <li><a href="#">Ayuda</a></li>
+           </ul>
+       
+           <ul class="loginbar">
+               <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></i></a> </li> 
+               <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+               <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+           </ul>
+   
+        </nav>
+      
+         <a class="burger-menu" href="#">
+           <i class="fa fa-bars burger"></i>
+         </a>
+       </header>
+       <section class="encabezadoregistro">
+           <h1 class="encabezado"> Registro de Usuario</h1>
+       </section>
+       <div class="formatoregistro">
+       <section class="registro">
+           <form class="formularioregistro" action="/" method="POST">
+        <div class="estilodiv">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input class="barra" type="text"  id="nombreapellido" name="nombreapellido" placeholder="Indique su nombre y Apellido" required>
+
+        </div>
+        <div class="estilodiv">
+            <label for="nombreUsuario">Nombre de Usuario</label>
+            <input  class="barra" type="text"  id="nombreUsuario" name="nombreUsuario" placeholder="Indique su nombre de Usuario" required>
+
+        </div>
+        <div class="estilodiv">
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input class="barra" type="date" name="fecha" value="2021/01/19" min="2003/01/19" required>
+
+        </div>
+        <div class="estilodiv">
+            <label for="domicilio">Domicilio</label>
+            <input class="barra" type="text"  id="domicilio" name="domicilio" placeholder="Indique su domicilio" required>
+
+        </div>
+        <div class="estilodiv">
+            <label for="tipodeUsuario">Perfil del Usuario</label>
+            <select name="tipodeUsuario" required>
+                <option class="barra" value="comprador">Comprador</option>
+                <option class="barra" value="vendedor">vendedor</option>
+            </select>
+        </div>
+        <div class="estilodiv">
+            
+            <label for="categorías">Categorías de Interés</label>
+            <div class="estilocaja">
+            <label for="electro">Electro</label>
+            <input type="checkbox" name="electro" value="Electro">
+            </div>
+            <div class="estilocaja">
+            <label for="moda">Moda</label>
+            <input type="checkbox" name="moda" value="Moda">
+            </div>
+            <div class="estilocaja">
+            <label for="hogar">Hogar</label>
+            <input  type="checkbox" name="hogar" value="Hogar">
+            </div>
+            <div class="estilocaja">
+            <label for="jugueteria">Juguetería</label>
+            <input  type="checkbox" name="jugueteria" value="Juguetería">
+            </div>
+            <div class="estilocaja">
+            <label for="vidasana">Visa sana</label>
+            <input  type="checkbox" name="vidasana" value="Visa sana">
+           </div>
+        </div>
+        <div class="estilodiv">
+            <label for="foto">Foto de Usuario</label>
+            <input class="barra" type="file" name="avatar" accept=".jpg">
+        </div>
+        <div class="estilodiv">
+            <label for="contraseña">Contraseña</label>
+            <input class="barra" type="password" name="contraseña" required>
+        </div>
+        <div class="estilodiv"> 
+            <label for="contraseña2">Confirmar contraseña</label>
+            <input class="barra" type="password" name="contraseña2" required>
+        </div>
+        <div class="estilodiv">
+            <input type="submit" value="Registrarme" clasS="button">
+            <input type="reset" value="Borrar" clasS="button"> 
+        </div>
+
+
+        
+        </form>
+       </section>
+       </div>
+       
+
+</body>
+</html>    
