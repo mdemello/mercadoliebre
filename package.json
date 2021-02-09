@@ -12,10 +12,7 @@
     "start": "node app.js",
     "test": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mdemello/mercadoliebre"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC"
